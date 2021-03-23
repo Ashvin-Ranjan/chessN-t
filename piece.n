@@ -1,0 +1,13 @@
+let pub p = imp "./pawn.n"
+let pub n = imp "./knight.n"
+let pub b = imp "./bishop.n"
+let pub r = imp "./rook.n"
+let pub q = imp "./queen.n"
+let pub k = imp "./king.n"
+
+type pub piece = <pawn p.Pawn>
+               | <knight n.Knight>
+               | <bishop b.Bishop>
+               | <rook r.Rook>
+               | <queen q.Queen>
+               | <king k.King>

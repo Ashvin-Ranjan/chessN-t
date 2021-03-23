@@ -1,0 +1,6 @@
+let piece = imp "./piece.n"
+
+let board:list[maybe[piece.piece]] = range(0, 64, 1)
+												   |> filterMap([_:int] -> maybe[maybe[piece.piece]] { return yes(none) })
+
+print(board)

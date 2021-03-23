@@ -1,0 +1,21 @@
+class pub Bishop [color:int] {
+	let pub getColor = [] -> int {
+		return color
+	}
+
+	let pub isWhite = [] -> bool {
+		return color == 0
+	}
+
+	let pub isBlack = [] -> bool {
+		return color == 1
+	}
+
+	let pub isSameColor = [c:int] -> bool {
+		return color == c
+	}
+
+	let pub setColor = [c:int] -> () {
+		var color = c
+	}
+}
